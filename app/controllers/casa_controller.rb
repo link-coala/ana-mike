@@ -19,4 +19,11 @@ class CasaController < ApplicationController
 
   def managementoffice
   end
-end
+  
+  def leave
+  end
+  
+    def corridor
+    end
+  
+  end
