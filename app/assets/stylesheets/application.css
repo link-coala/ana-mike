@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+  .images {
+   text-align: center;
+   padding: 25px;
+   text-decoration: none;
+   background-color:white;
+}
+  .divission {
+   text-align: center;
+   padding: 25px;
+   text-decoration: none;
+   background-color:lightblue;
+}
+  .links {
+               
+   font-family: 'Source Sans Pro', sans-serif;
+   text-align: center;
+   font-size: 30px;
+   padding: 25px;
+   text-decoration: none;
+   background-color:lightblue;
+   color: black;
+   
+}
+ .titles {
+   font-size: 45px;      
+   font-family: 'Notable', sans-serif;
+   text-align: center;
+   color: red;
+}
+
+* {
+  background-color: white;  
+}
+ 
+

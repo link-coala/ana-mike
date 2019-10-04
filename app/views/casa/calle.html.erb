@@ -1,4 +1,8 @@
-<h1>la calle</h1>
-
-<%= link_to 'entrar', casa_reception_path %>
-<%= link_to 'irse', casa_leave_path %>
+<h1 class="titles">la calle</h1>
+<div class="images">
+<%= image_tag("pictures/imagen.jpg", {:style => "width:100px;"}) %>
+</div>
+<div class="divission">
+<%= link_to 'entrar', casa_reception_path,class:"links" %>
+<%= link_to 'irse', casa_leave_path,class:"links" %>
+</div>
