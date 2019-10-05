@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+    a {
+   background-color:#ACE4E6;
+}
+  .doors {
+   padding: 25px;
+   background-color:#ACE4E6;
+
+}
   .images {
    text-align: center;
    padding: 25px;
@@ -23,10 +31,11 @@
    text-align: center;
    padding: 25px;
    text-decoration: none;
-   background-color:lightblue;
+   background-color: #ACE4E6;
+   border-left: 6px solid #40FFEA;
+   border-top: 6px solid #40FFEA;
 }
   .links {
-               
    font-family: 'Source Sans Pro', sans-serif;
    text-align: center;
    font-size: 30px;
@@ -41,8 +50,8 @@
    font-family: 'Notable', sans-serif;
    text-align: center;
    color: red;
+   border-bottom: 6px dashed black;
 }
-
 * {
   background-color: white;  
 }
