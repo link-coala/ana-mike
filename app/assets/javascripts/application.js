@@ -38,3 +38,13 @@ onReady(function () {
     show('page', true);
     show('loading', false);
 });
+//door animation
+$(document).ready(function(){
+    $("#loading").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+});
+

@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+/* load rules */
 #page {
     display: none;
 }
@@ -25,10 +26,12 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(192, 192, 192, 0.5);
-    background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+    background-image: url("doors/animation2.gif");
     background-repeat: no-repeat;
     background-position: center;
 }
+/* layout style */
+
     a {
    background-color:#ACE4E6;
 }
