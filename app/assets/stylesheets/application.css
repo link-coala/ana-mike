@@ -26,9 +26,12 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(192, 192, 192, 0.5);
+}
+#loadingimg {
     background-image: url("doors/animation2.gif");
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 /* layout style */
 
@@ -73,6 +76,12 @@
 }
 * {
   background-color: white;  
+}
+ .imgcenter {
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
  
 

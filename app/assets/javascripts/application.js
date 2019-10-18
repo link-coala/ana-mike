@@ -40,11 +40,11 @@ onReady(function () {
 });
 //door animation
 $(document).ready(function(){
-    $("#loading").animate({
+    $(".imgcenter").animate({
       left: '250px',
-      opacity: '0.5',
-      height: '150px',
-      width: '150px'
+      opacity: '0.0',
+      height: '4000px',
+      width: '2500px'
     });
 });
 
