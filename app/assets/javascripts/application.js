@@ -20,6 +20,7 @@
 //$(document).ready(function(){
 // $(".titles").delay(1000).fadeOut();
 //});
+//set load animation
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
     function checkReady() {
@@ -29,11 +30,9 @@ function onReady(callback) {
         }
     }
 }
-
 function show(id, value) {
     document.getElementById(id).style.display = value ? 'block' : 'none';
 }
-
 onReady(function () {
     show('page', true);
     show('loading', false);
@@ -48,18 +47,17 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
+//click in the X   
 	$(".close").click(function(){
-
-	$("h1,.divission,footer,.images,.button,.close").show();
-    $(".close").removeClass("intro");
+	$("h1,.divission,footer,.images,.button").show();
+    $(".close").hide();
 	});    
-    
+// click in the scroll    
  $(".scroll").click(function(){
  $("#form").show();
 	$("h1,.divission,footer,.images").hide();
 	$("#on").removeClass("ad")
-	$("#close,#form").removeClass("intro");
-	$(".button").hide();	
+	$("#close").addClass("intro");
 	});
 //close add
 
