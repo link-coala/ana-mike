@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'casa/managementoffice'
   get 'casa/leave'
   get 'casa/corridor'
-  root 'casa#calle'
+  root to 'casa#reception'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 end

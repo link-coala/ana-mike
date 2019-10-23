@@ -3,6 +3,7 @@ class CasaController < ApplicationController
   end
 
   def reception
+      flash[:notice] = "Hello Flash"
   end
 
   def janitorroom
