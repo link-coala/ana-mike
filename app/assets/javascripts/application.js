@@ -46,8 +46,8 @@ $(document).ready(function(){
       width: '2500px'
     });
 });
+//click in the X 
 $(document).ready(function(){
-//click in the X   
 	$(".close").click(function(){
 	$("h1,.divission,footer,.images,.button").show();
     $(".close").hide();
@@ -59,7 +59,5 @@ $(document).ready(function(){
 	$("#on").removeClass("ad")
 	$("#close").addClass("intro");
 	});
-//close add
-
 	});
 

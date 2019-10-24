@@ -1,8 +1,5 @@
-<h1><%= t :hello_world %></h1>
-<p><%= flash[:notice] %></p>
 <div id="page">
 <h1 class="titles"><%= t('recepción') %></h1>
-<h1><%= t('hello') %></h1>
 <div class="images">
 <%= image_tag("maps/reception.png", {:style => "width:120px;"}) %>
 </div>
@@ -21,17 +18,4 @@
 	<span class ="close">&#10005;</span></p>
 	<span class ="close">advice</span>
 	 </div>
-<!-- ad -->
-<script>
-$(document).ready(function(){    
-    //Check if the current URL contains '#'
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
-});
-</script>
+<!-- end ad -->
