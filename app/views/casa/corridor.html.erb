@@ -1,3 +1,4 @@
+<div id="page">
 <h1 class="titles"><%= t('corredor') %></h1>
 <div class="images">
 <%= image_tag("maps/corridor.png", {:style => "width:120px;"}) %>
@@ -7,19 +8,7 @@
 <%= link_to(image_tag("doors/3.gif",:size => "25x40", :class => "doors"), casa_reception_path) %>
 <%= link_to(image_tag("doors/gardencorridor.gif",:size => "25x40", :class => "doors"), casa_garden_path) %>
 </div>
+</div>
 <div id="loading">
   <%= image_tag("doors/animation2.gif", { :class => "imgcenter"}) %>
 </div>
-<script>
-$(document).ready(function(){    
-    //Check if the current URL contains '#'
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
-});
-</script>
