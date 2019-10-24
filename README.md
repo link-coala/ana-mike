@@ -1,4 +1,6 @@
 # README
 blinking doors at map with colors
 <br>
-fix animation's door may be with css3 keyframes
+add foreing room
+<br>
+add page title like HSC
