@@ -10,7 +10,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<!-- select language -->
+Language:
+<%= link_to_unless_current "English", locale: "en" %> |
+<%= link_to_unless_current "español", locale: "es" %>
+<!-- end of select -->
   <body>
     <%= yield %>
   </body>

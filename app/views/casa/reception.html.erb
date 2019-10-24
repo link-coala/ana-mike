@@ -1,11 +1,7 @@
 <h1><%= t :hello_world %></h1>
 <p><%= flash[:notice] %></p>
-Language:
-<%= link_to_unless_current "English", locale: "en" %> |
-<%= link_to_unless_current "Wookieespeak", locale: "wk" %>
-<%= link_to_unless_current "pirate", locale: "pirate" %>
 <div id="page">
-<h1 class="titles">recepción</h1>
+<h1 class="titles"><%= t('recepción') %></h1>
 <h1><%= t('hello') %></h1>
 <div class="images">
 <%= image_tag("maps/reception.png", {:style => "width:120px;"}) %>
