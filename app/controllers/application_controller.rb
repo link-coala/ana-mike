@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+ 
  around_action :switch_locale
  before_action :set_locale
  private
