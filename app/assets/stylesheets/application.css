@@ -14,12 +14,10 @@
  *= require_self
  */
 /* load rules */
-.ad {
-font-family: 'Permanent Marker', cursive;
-font-size: 90px;	
-color: gray;	
-display: none;	
+.intro{	
+display : none;
 }
+
 #page {
     display: none;
 }

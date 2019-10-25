@@ -11,9 +11,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 <!-- select language -->
+<div id="select">
 Language:
 <%= link_to_unless_current "English", locale: "en" %> |
 <%= link_to_unless_current "español", locale: "es" %>
+</div>
 <!-- end of select -->
   <body>
     <%= yield %>

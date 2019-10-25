@@ -47,17 +47,32 @@ $(document).ready(function(){
     });
 });
 //click in the X 
-$(document).ready(function(){
-	$(".close").click(function(){
-	$("h1,.divission,footer,.images,.button").show();
-    $(".close").hide();
-	});    
+//$(document).ready(function(){
+//	$(".close").click(function(){
+//	$("h1,.divission,footer,.images,.button").show();
+ //   $(".close").hide();
+//	});    
 // click in the scroll    
- $(".scroll").click(function(){
- $("#form").show();
-	$("h1,.divission,footer,.images").hide();
-	$("#on").removeClass("ad")
-	$("#close").addClass("intro");
-	});
-	});
+// $(".scroll").click(function(){
+// $("#form").show();
+//	$("h1,.divission,footer,.images").hide();
+//	$("#on").removeClass("ad")
+//	$("#close").addClass("intro");
+//	});
+//	});
+//definitive ad animation
+$(document).ready(function(){
+$(".scroll").click(function(){
+	$("h1,.divission,footer,.images,#select").addClass("intro");
+	$("#on").show();
+});
+	$(".close").click(function(){
+	$("h1,.divission,footer,.images,.footer").removeClass("intro");
+	$("#on").hide();
 
+ //$(".ad").hide();
+// $("#getred").css("color", "white");
+});
+
+    
+});

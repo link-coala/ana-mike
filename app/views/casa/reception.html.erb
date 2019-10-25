@@ -2,7 +2,7 @@
 <div id="page">
 <h1 class="titles"><%= t('recepción') %></h1>
 <div class="images">
-<%= image_tag("maps/reception.png", {:style => "width:120px;"}) %>
+<%= image_tag("pictures/imagen.jpg", {:style => "width:120px;"}) %>
 </div>
 <div class="divission" >
 <%= link_to(image_tag("doors/2.gif",:size => "25x40", :class => "doors"), casa_bathroom_path) %>
@@ -11,10 +11,11 @@
 </div>
 </div>
 <%= render 'load' %>
+
 <!-- ad -->
-<div id ="on" class="ad">
+<div id ="on" class="intro">
 <p class ="header">
 	<span class ="close">&#10005;</span></p>
-	<span class ="close">advice</span>
+	<span><%= image_tag("maps/reception.png", {:style => "width:120px;"}) %></span>
 	 </div>
 <!-- end ad -->
