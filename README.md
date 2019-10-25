@@ -4,3 +4,5 @@ blinking doors at map with colors
 add foreing room
 <br>
 add page title like HSC
+<br>
+instanciar traducciones

@@ -93,5 +93,30 @@ display : none;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+#on{
+    background-color: white;
+    margin: 0 auto;
+    display: none;
+    top: 150px;
+    z-index: 1;
+    padding: 30%;
+    margin-top: -130px;
+
+ 
+}
+.close{
+   font-size: 35px;  
+   font-weight: 200;
+}
+.blink{
+   font-size: 35px; 
+}
+.map_image{
+    margin-left: 43%;
+}
+.map_advice{
+    text-align: center;
+    font-size: 29px; 
+}
 
 
