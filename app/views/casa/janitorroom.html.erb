@@ -2,11 +2,23 @@
 <div id="page">
 <h1 class="titles"><%= t('cuarto del conserje') %></h1>
 <div class="images">
-<%= image_tag("maps/jn.png", {:style => "width:120px;"}) %>
+<%= image_tag("pictures/imagen.jpg", {:style => "width:120px;"}) %>
 </div>
 <div class="divission">
-<%= link_to(image_tag("doors/janitorcorridor.gif",:size => "25x40", :class => "doors"), casa_corridor_path) %>    
+<%= link_to(image_tag("doors/janitorcorridor.gif",:size => "25x40", :class => "doors"), casa_corridor_path) %>
+<%= image_tag("doors/scroll.png", :size => "25x40", :class => "scroll") %>
 </div>
 </div>
 <%= render 'load' %>
+<!-- ad -->
+<div id ="on" class="intro">
+<p class ="header">
+    <span class="blink"><%=t('adviceone') %></span>
+	<span class ="close">&#10005;</span></p>
+	<div class ="map_image">
+	<span><%= image_tag("maps/jn.png", {:style => "width:120px;"}) %></span>
+	 </div>
+	 <p class ="map_advice"><%=t('advicetwo') %></p>
+	 </div>
+<!-- end ad -->
 
