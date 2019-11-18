@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
- 
+ before_action :authenticate_visitor!
+ skip_before_action :authenticate_visitor!, only: [:calle, :reception, :admin_login]
  around_action :switch_locale
  before_action :set_locale
  private
