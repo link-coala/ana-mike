@@ -20,6 +20,26 @@ Language:
 </div>
 <!-- end of select -->
   <body>
+<!-- devise notice -->
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<!-- devise notice end -->
+<!-- devise links -->
+<p class="navbar-text float-right">
+<% if visitor_signed_in? %>
+  Logged in as <strong><%= current_visitor.email %></strong>.
+  <%= link_to 'Edit profile', edit_visitor_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_visitor_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_visitor_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_visitor_session_path, :class => 'navbar-link'  %>
+<% end %>
+</p>
+<!-- devise links end -->
     <%= yield %>
   </body>
 <%= render 'layouts/footer' %>
