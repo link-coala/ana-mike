@@ -6,3 +6,5 @@ add foreing room
 add page title like HSC
 <br>
 instanciar traducciones
+<br>
+ AdminUser.create(:email => 'admin@gmail.com', :password => 'password123', :password_confirmation => 'password123')
