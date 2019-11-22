@@ -4,7 +4,22 @@
 <h1 class="titles"><%= t('recepción') %></h1>
 <div class="images">
 <%= image_tag("pictures/imagen.jpg", {:style => "width:120px;"}) %>
+<div ng-app ng-init="tab=3" class="tabs">
+    <ul class="tabs-items">
+        <li ng-click="tab=1">Tab 1</li>
+        <li ng-click="tab=2">Tab 2</li>
+        <li ng-click="tab=3">Tab 3</li>
+    </ul>
+    <div class="tabs-content-wrapper">
+        <div class="tabs-content" ng-show="tab == 1">	
+          <%= link_to(image_tag("doors/2.gif",:size => "25x40", :class => "doors"), casa_bathroom_path) %>
+<%= link_to(image_tag("doors/3.gif",:size => "25x40", :class => "doors"), casa_corridor_path) %>
+<%= image_tag("doors/scroll.png", :size => "25x40", :class => "scroll") %>
 </div>
+        <div class="tabs-content" ng-show="tab==2">Content #2</div>
+        <div class="tabs-content" ng-show="tab==3">Content #3</div>
+    </div>            
+</div> 
 <div class="divission" >
 <%= link_to(image_tag("doors/2.gif",:size => "25x40", :class => "doors"), casa_bathroom_path) %>
 <%= link_to(image_tag("doors/3.gif",:size => "25x40", :class => "doors"), casa_corridor_path) %>
