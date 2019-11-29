@@ -40,17 +40,19 @@ display : none;
 /* layout style */
 
     a {
-   background-color:#ACE4E6;
+   background-color:#ccc;
 }
   .scroll{
       font-size: 40px;
       display: inline;
       padding: 25px;
-      background-color:#ACE4E6;
+      background-color:#ccc;
+      
   }
   .doors {
    padding: 25px;
-   background-color:#ACE4E6;
+   background-color:#ccc;
+
 
 }
   .images {
@@ -99,7 +101,7 @@ display : none;
     display: none;
     top: 150px;
     z-index: 1;
-    padding: 30%;
+    padding: 21%;
     margin-top: -130px;
 
  
@@ -156,17 +158,18 @@ display : none;
 	margin-left: 0px;
 	list-style: none;
 	padding: 0px;
+	
 }
 .nav ul li {
 	width: 160px;
 	float: left;
+	
 }
 }
 .nav ul li a:hover {
 	color: #069;
 }
 body {
-  background: #ecf0f1;
   margin: 10px;
   font-family: "Helvetica Neue", sans-serif;
 }
@@ -176,19 +179,64 @@ ul {
 }
 .tabs-items li {    
   list-style: none;
-  padding: 10px 15px;
+  padding: 10px 35px;
   display: inline-block;
   background-color: #333;  
   color: #ccc;
   cursor: pointer;
+  font-size: 19px;
 }
 .tabs-items li:hover{
 	background: #4a4a4a; 
 	color: #fff;
 }
+.tabs-content {
+  padding: 15px 15px;
+  background: #ccc;
+  min-height: 100px;
+}
+
 .tabs-content-wrapper {
   padding: 15px 15px;
   background: #ccc;
-  min-height: 200px;
+  min-height: 100px;
+  border-left: 6px solid #40FFEA;
+  border-top: 6px solid #40FFEA;
 }
-
+p.alert.alert-danger{
+font-size: 33px;
+text-align: center;
+}
+h2 {
+    font-size: 3em;
+    margin-bottom: 0.75em;
+    text-align: center;
+}
+label {
+    font-size: 25px;
+    margin-left: 47%;
+}
+input {
+    padding: 20px;
+    font-size: 29px;
+}
+form .buttons input[type=submit], form .buttons input[type=button], 
+form .buttons button, form .actions input[type=submit], form .actions input[type=button], 
+form .actions button {
+    margin-right: 10px;
+    font-size: 30px;
+    padding: 20px;
+    margin:0 auto;
+    display:block;
+}
+form input[type=text], form input[type=password], form input[type=email], form input[type=number], form input[type=url], form input[type=tel], form input[type=date], form input[type=time], form textarea {
+    width: calc(80% - 22px);
+    border: 1px solid #c9d0d6;
+    border-radius: 3px;
+    font-size: 2.95em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    outline: none;
+    padding: 8px 10px 7px;
+    margin:0 auto;
+    display:block;
+}
