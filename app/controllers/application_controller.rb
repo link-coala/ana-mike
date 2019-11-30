@@ -8,7 +8,7 @@ def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:account_update) { |u| u.permit(:name, :email, :password, :current_password)}
 end
  before_action :authenticate_visitor!
- skip_before_action :authenticate_visitor!, only: [:calle, :reception, :admin_login]
+ skip_before_action :authenticate_visitor!, only: [:calle, :reception, :admin_login, :leave]
  around_action :switch_locale
  before_action :set_locale
  private
