@@ -4,6 +4,17 @@
 <h1 class="titles"><%= t('recepción') %></h1>
 <div class="images">
 <%= image_tag("pictures/imagen.jpg", {:style => "width:120px;"}) %>
+<div class="divs">
+     <div class="cls1">1</div>
+     <div class="cls2">2</div>
+     <div class="cls3">3</div>
+     <div class="cls4">4</div>
+     <div class="cls5">5</div>
+     <div class="cls6">6</div>
+     <div class="cls7">7</div>
+ </div>
+ <a id="next">next</a>
+ <a id="prev">prev</a>
 <div ng-app ng-init="tab=3" class="tabs">
     <ul class="tabs-items">
         <li ng-click="tab=3">Puertas</li>
@@ -13,14 +24,14 @@
     </ul>
     <div class="tabs-content-wrapper">
         <div class="tabs-content" ng-show="tab == 1">	
- <%= image_tag("people/chloe.png", :size => "25x40", :class => "scroll") %>
+ <%= image_tag("people/chloe.png", :size => "50x60", :class => "scroll") %>
 </div>
         <div class="tabs-content" ng-show="tab==2">
-            <%= image_tag("doors/scroll.png", :size => "25x40", :class => "scroll") %>
+            <%= image_tag("doors/scroll.png", :size => "35x60", :class => "scroll") %>
         </div>
         <div class="tabs-content" ng-show="tab==3">
-<%= link_to(image_tag("doors/2.gif",:size => "25x40", :class => "doors"), casa_bathroom_path) %>
-<%= link_to(image_tag("doors/3.gif",:size => "25x40", :class => "doors"), casa_corridor_path) %>
+<%= link_to(image_tag("doors/2.gif",:size => "35x60", :class => "doors"), casa_bathroom_path) %>
+<%= link_to(image_tag("doors/3.gif",:size => "35x60", :class => "doors"), casa_corridor_path) %>
 
         </div>
     </div>            
