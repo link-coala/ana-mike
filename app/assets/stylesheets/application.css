@@ -240,3 +240,21 @@ form input[type=text], form input[type=password], form input[type=email], form i
     margin:0 auto;
     display:block;
 }
+.dial {
+ display: none;
+}
+.glasses{
+      font-size: 40px;
+      display: inline;
+      padding: 25px;
+      background-color:#ccc;
+  }
+ .idiom{
+ display: none;
+  } 
+  .yuli{
+      font-size: 40px;
+      display: inline;
+      padding: 25px;
+      background-color:#ccc;
+  } 

@@ -3,43 +3,31 @@
 <div id="page">
 <h1 class="titles"><%= t('recepción') %></h1>
 <div class="images">
+
 <%= image_tag("pictures/imagen.jpg", {:style => "width:120px;"}) %>
-<div class="divs">
-     <div class="cls1">1</div>
-     <div class="cls2">2</div>
-     <div class="cls3">3</div>
-     <div class="cls4">4</div>
-     <div class="cls5">5</div>
-     <div class="cls6">6</div>
-     <div class="cls7">7</div>
- </div>
- <a id="next">next</a>
- <a id="prev">prev</a>
 <div ng-app ng-init="tab=3" class="tabs">
     <ul class="tabs-items">
-        <li ng-click="tab=3">Puertas</li>
-        <li ng-click="tab=1">Personas</li>
-        <li ng-click="tab=2">Objetos</li>
-      
+        <li ng-click="tab=3"><%=t('doors')%></li>
+        <li ng-click="tab=1"><%=t('people')%></li>
+        <li ng-click="tab=2"><%=t('objects')%></li>
     </ul>
-    <div class="tabs-content-wrapper">
-        <div class="tabs-content" ng-show="tab == 1">	
- <%= image_tag("people/chloe.png", :size => "50x60", :class => "scroll") %>
+<div class="tabs-content-wrapper">
+<div class="tabs-content" ng-show="tab == 1">	
+ <%= image_tag("people/chloe.png", :size => "50x60", :class => "person") %>
 </div>
-        <div class="tabs-content" ng-show="tab==2">
-            <%= image_tag("doors/scroll.png", :size => "35x60", :class => "scroll") %>
-        </div>
-        <div class="tabs-content" ng-show="tab==3">
+<div class="tabs-content" ng-show="tab==2">
+<%= image_tag("doors/scroll.png", :size => "35x60", :class => "scroll") %>
+<%= image_tag("objects/glasses.png", :size => "35x60", :class => "glasses") %>
+</div>
+<div class="tabs-content" ng-show="tab==3">
 <%= link_to(image_tag("doors/2.gif",:size => "35x60", :class => "doors"), casa_bathroom_path) %>
 <%= link_to(image_tag("doors/3.gif",:size => "35x60", :class => "doors"), casa_corridor_path) %>
 
         </div>
     </div>            
 </div> 
-
 </div>
 <%= render 'load' %>
-
 <!-- ad -->
 <div id ="on" class="intro">
 <p class ="header">
@@ -51,3 +39,29 @@
 	 <p class ="map_advice"><%=t('advicetwo') %></p>
 	 </div>
 <!-- end ad -->
+<!-- Dialogues -->
+<div class="dial">
+<span class ="X">&#10005;</span></p>    
+<div class="divs">
+     <div class="cls1">1</div>
+     <div class="cls2">2</div>
+     <div class="cls3">3</div>
+     <div class="cls4">4</div>
+     <div class="cls5">5</div>
+     <div class="cls6">6</div>
+     <div class="cls7">7</div>
+ </div>
+ <a id="next">next</a>
+ <a id="prev">prev</a>
+ </div>
+ <!-- dialogues -->
+  <!-- select idiom -->
+<div class="idiom">
+<span class ="X">&#10005;</span></p>    
+<div id="select">
+Language:
+<%= link_to_unless_current "English", locale: "en" %> |
+<%= link_to_unless_current "español", locale: "es" %>
+</div>
+ </div>
+  <!-- select idiom -->

@@ -69,9 +69,6 @@ $(".scroll").click(function(){
 	$(".close").click(function(){
 	$("h1,.divission,footer,.images,.footer,#select").removeClass("intro");
 	$("#on").hide();
-
- //$(".ad").hide();
-// $("#getred").css("color", "white");
 });
 });
 //blinking text
@@ -93,6 +90,8 @@ $.fn.blink = function (options) {
 $(document).ready(function() {
 			$('.blink').blink({delay: 200});
 		});
+
+//previous and nex
 $(document).ready(function(){
     $(".divs div").each(function(e) {
         if (e != 0)
@@ -118,4 +117,26 @@ $(document).ready(function(){
         }
         return false;
     });
-});		
+});	
+//dialogue animation
+$(document).ready(function(){
+$(".person").click(function(){
+$(".dial").show();
+$(".titles,img,.tabs").hide(); 
+});
+$(".X").click(function(){
+$(".dial").hide();
+$(".titles,img,.tabs").show(); 
+});
+});
+//glasses animation
+$(document).ready(function(){
+$(".glasses").click(function(){
+$(".idiom").show();
+$(".titles,img,.tabs").hide();
+});
+$(".X").click(function(){
+$(".idiom").hide();
+$(".titles,img,.tabs").show(); 
+});
+});
