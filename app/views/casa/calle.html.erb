@@ -1,15 +1,15 @@
-<h1 class="titles">la calle</h1>
+<h1 class="titles"><%= t('calle') %></h1>
 <div class="images">
 <%= image_tag("pictures/imagen.jpg", {:style => "width:100px;"}) %>
 </div>
-<!-- selection tabs -->
 <div class="images">
+<%= image_tag("pictures/imagen.jpg", {:style => "width:120px;"}) %>
 <div ng-app ng-init="tab=3" class="tabs">
-<ul class="tabs-items">
-    <li ng-click="tab=3">Puertas</li>
-    <li ng-click="tab=1">Personas</li>
-    <li ng-click="tab=2">Objetos</li>
-</ul>
+    <ul class="tabs-items">
+        <li ng-click="tab=3"><%=t('doors')%></li>
+        <li ng-click="tab=1"><%=t('people')%></li>
+        <li ng-click="tab=2"><%=t('objects')%></li>
+    </ul>
 <div class="tabs-content-wrapper">
 <div class="tabs-content" ng-show="tab == 1">	
  <%= image_tag("people/yuli.png", :size => "50x60", :class => "person") %>
@@ -25,14 +25,23 @@
     </div>            
 </div> 
 </div>
-<!-- selection tabs -->
-<!-- Dialogues -->
+  <!-- select idiom -->
+<div class="idiom">
+<span class ="X">&#10005;</span></p>    
+<div id="select">
+Language:
+<%= link_to_unless_current "English", locale: "en" %> |
+<%= link_to_unless_current "español", locale: "es" %>
+</div>
+ </div>
+ <!-- select idiom -->
+ <!-- Dialogues -->
 <div class="dial">
 <span class ="X">&#10005;</span></p>    
 <div class="divs">
      <div class="cls1">
 <%= link_to 'entrar', casa_reception_path,class:"links" %>
-<%= link_to 'irse', casa_leave_path,class:"links" %>
+<%= link_to 'irse', casa_leave_path,class:"links" %>         
      </div>
      <div class="cls2">2</div>
      <div class="cls3">3</div>
@@ -45,13 +54,20 @@
  <a id="prev">prev</a>
  </div>
  <!-- dialogues -->
-  <!-- select idiom -->
-<div class="idiom">
-<span class ="X">&#10005;</span></p>    
-<div id="select">
-Language:
-<%= link_to_unless_current "English", locale: "en" %> |
-<%= link_to_unless_current "español", locale: "es" %>
-</div>
- </div>
-  <!-- select idiom -->
+ <!-- reload -->
+<script type='text/javascript'>
+(function()
+{
+  if( window.localStorage )
+  {
+    if( !localStorage.getItem('firstLoad') )
+    {
+      localStorage['firstLoad'] = true;
+      window.location.reload();
+    }  
+    else
+      localStorage.removeItem('firstLoad');
+  }
+})();
+</script>
+ <!-- reload -->
