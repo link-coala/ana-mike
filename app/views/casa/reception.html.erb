@@ -19,6 +19,7 @@
 <%= image_tag("doors/scroll.png", :size => "35x60", :class => "scroll") %>
 <%= image_tag("objects/glasses.png", :size => "35x60", :class => "glasses") %>
 <%= image_tag("objects/visitorsbook.png", :size => "35x60", :class => "glasses") %>
+<%= image_tag("objects/carne.png", :size => "35x60", :class => "ID") %>
 </div>
 <div class="tabs-content" ng-show="tab==3">
 <%= link_to(image_tag("doors/2.gif",:size => "35x60", :class => "doors"), casa_bathroom_path) %>
@@ -70,3 +71,28 @@ Language:
 </div>
  </div>
   <!-- select idiom -->
+<div id="id2">
+<!-- ID -->
+<!-- devise notice -->
+<span class ="X">&#10005;</span></p> 
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<!-- devise notice end -->
+<!-- devise links -->
+<p class="navbar-text float-right">
+<% if visitor_signed_in? %>
+  Logged in as <strong><%= current_visitor.email %></strong>.
+  <%= link_to 'Edit profile', edit_visitor_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_visitor_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_visitor_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_visitor_session_path, :class => 'navbar-link'  %>
+<% end %>
+</p>
+<!-- devise links end -->
+</div>
+<!-- ID -->

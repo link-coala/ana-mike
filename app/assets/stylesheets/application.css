@@ -263,3 +263,6 @@ form input[type=text], form input[type=password], form input[type=email], form i
       text-align: center;
       background: red;
   }  
+  #id2{
+      display: none;
+  }  

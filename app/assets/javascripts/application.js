@@ -140,3 +140,14 @@ $(".idiom").hide();
 $(".titles,img,.tabs").show(); 
 });
 });
+//ID animation
+$(document).ready(function(){
+$(".ID").click(function(){
+$("#id2").show();
+$(".titles,img,.tabs").hide();
+});
+$(".X").click(function(){
+$(".navbar-text float-right").hide();
+$(".titles,img,.tabs").show(); 
+});
+});
