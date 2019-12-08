@@ -251,6 +251,10 @@ form input[type=text], form input[type=password], form input[type=email], form i
   }
  .idiom{
  display: none;
+ font-size: 40px;
+ text-align: center; 
+ padding: 25px;
+ margin-bottom: 500px;
   } 
   .person{
       font-size: 40px;
@@ -266,3 +270,5 @@ form input[type=text], form input[type=password], form input[type=email], form i
   #id2{
       display: none;
   }  
+
+  
