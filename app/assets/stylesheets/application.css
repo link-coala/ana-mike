@@ -265,7 +265,8 @@ form input[type=text], form input[type=password], form input[type=email], form i
   .dial{
       font-size: 40px;
       text-align: center;
-      background: red;
+      background: white;
+      margin-bottom: 400px;
   }  
   #id2{
       display: none;
