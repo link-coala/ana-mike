@@ -40,7 +40,7 @@ display : none;
 /* layout style */
 
     a {
-   background-color:#ccc;
+
 }
   .scroll{
       font-size: 40px;
@@ -271,5 +271,12 @@ form input[type=text], form input[type=password], form input[type=email], form i
   #id2{
       display: none;
   }  
+a, a:link, a:visited {
+    color: red;
+    text-decoration: none;
+    background: white;
+}
 
-  
+
+
+
