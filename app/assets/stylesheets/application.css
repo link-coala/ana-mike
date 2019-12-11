@@ -123,7 +123,6 @@ display : none;
 .footer_tag{
     text-align: right;
     font-size: 15px;
-    margin-left:10px;
     font-family: 'PT Mono', monospace;
 }
 .footer_img {
@@ -277,6 +276,10 @@ a, a:link, a:visited {
     background: white;
 }
 
-
-
+.photo {
+   filter: blur(0.9px);
+}
+.footer_tag,.footer_img {
+  
+}
 
