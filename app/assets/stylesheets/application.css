@@ -244,7 +244,16 @@ a, a:link, a:visited {
 .photo {
    filter: blur(0.9px);
 }
-.footer_tag,.footer_img {
-  
-}
 
+@media only screen and (max-width: 600px) {
+.tabs-items li {
+    list-style: none;
+    padding: 5px 1px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+  
+}    
+}
