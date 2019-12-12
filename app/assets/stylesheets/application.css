@@ -255,5 +255,10 @@ a, a:link, a:visited {
     cursor: pointer;
     font-size: 17px;
   
-}    
+} 
+.photo {
+    filter: blur(0.9px);
+    height: 121px;
+    width: 293px;
+}
 }
